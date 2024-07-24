@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Inversión</title>
+    <style>
+        /* Estilos para el formulario */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+input, button {
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+/* Estilos para el resultado */
+#result {
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+header {
+  background-color: #333;
+  color: orange;
+  padding: 20px 0;
+  text-align: center;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px 10px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+}
+
+    </style>
+    
+</head>
+<body>
+    <header>
+    <h1>Fondo de Inversión Vida</h1>
+    
+         <a href="index.html">Inicio</a></li>
+    </header>
+    
+    <h2>Simulador de Inversión</h2>
+    <form id="investment-form">
+        <label for="initial-amount">Cantidad inicial de inversión:</label>
+        <input type="number" id="initial-amount" required>
+        <label for="interest-rate">Tasa de interés anual (%):</label>
+        <input type="number" id="interest-rate" required>
+        <label for="investment-period">Período de inversión (años):</label>
+        <input type="number" id="investment-period" required>
+        <button type="submit">Calcular</button>
+    </form>
+    <div id="result"></div>
+    
+    
+    <br><br><br><br><br>
+    <footer>
+        <p>&copy; 2024 Fondo de Inversión Vida. Todos los derechos reservados.<br> <a href="https://wa.me/+584262840546" style="color: orange;">Contáctame por WhatsApp</a></p>
+    </footer>
+    
+    <script>
+        document.getElementById('investment-form').addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    const initialAmount = parseFloat(document.getElementById('initial-amount').value);
+    const interestRate = parseFloat(document.getElementById('interest-rate').value) / 100;
+    const investmentPeriod = parseInt(document.getElementById('investment-period').value);
+
+    const futureValue = calculateFutureValue(initialAmount, interestRate, investmentPeriod);
+    displayResult(futureValue);
+});
+
+function calculateFutureValue(initialAmount, interestRate, investmentPeriod) {
+    return initialAmount * Math.pow(1 + interestRate, investmentPeriod);
+}
+
+function displayResult(futureValue) {
+    const resultElement = document.getElementById('result');
+    resultElement.textContent = `Valor futuro de la inversión: $${futureValue.toFixed(2)}`;
+}
+
+    </script>
+</body>
+</html>

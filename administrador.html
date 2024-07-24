@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Administrador - Inversiones</title>
+  <link rel="stylesheet" href="styles.css">
+  
+    <style>
+     /* Estilos generales */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+/* Encabezado */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+/* Menú de navegación */
+
+
+/* Menú de navegación */
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav li a {
+  color: orange;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px 10px;
+}
+
+nav li a:hover {
+  background-color: #0074D9;
+  color: #fff;
+}
+
+/* Menú desplegable */
+.dropdown {
+  position: relative;
+}
+
+.dropdown .submenu {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  border-radius: 15px;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  line-height: 4px;
+}
+
+.dropdown:hover .submenu {
+  display: block;
+}
+
+.dropdown .submenu li {
+  padding: 10px;
+}
+
+.dropdown .submenu li a {
+  color: black;
+  text-decoration: none;
+}
+
+.dropdown .submenu li a:hover {
+  background-color: #0074D9;
+  color: #fff;
+}
+
+/* Estilos adicionales */
+/* Agrega más estilos según tus preferencias */
+
+  </style>
+</head>
+<body onload="funcion1(); funcion2(); funcion3(); funcion4(); funcion5(); funcion6(); funcion7()">
+    <div id="contenido" style="display: none;">
+        
+  <header>
+    <h1>Administrador</h1>
+    <h3>Fondo de Inversión Vida</h3>
+    
+        <h4>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li class="dropdown">
+                <a>Usuarios</a>
+                <ul class="submenu">
+                    <li><a href="emmanuel.html"><center>Emmanuel Manosalva</center></a></li>
+                    <li><a href="isaias.html"><center>Isaías Manosalva</center></a></li>
+                    <li><a href="manuel.html"><center>Manuel Gordillo</center></a></li>
+                    <li><a href="nobis.html"><center>Nobisol Amundarey</center></a></li>
+                    <li><a href="nurbis.html"><center>Nurbis Urbáez</center></a></li>
+                    <li><a href="yuli.html"><center>Yuli López</center></a></li>
+                    <li><a href="yulmis.html"><center>Yulmis Manosalva</center></a></li>
+                    </ul>
+            </li>
+            <li><a href="simulador-inversion.html">Play</a></li>
+            
+            </ul>
+    </nav></h4>
+            
+    
+  </header>
+
+    
+<div id="total-general-container">
+  <h2>Total General de Inversión</h2>
+  <p id="total-general"></p>
+    
+        
+      <h2>Emmanuel Manosalva</h2>
+      <section style="display: none;">
+          
+    <span id="semana-23"></span>
+    <span id="semana-24"></span>
+    <span id="semana-25"></span>
+    <span id="semana-26"></span>
+    <span id="semana-27"></span>
+    <span id="total-junio"></span>
+    
+    <span id="semana-28"></span>
+    <span id="semana-29"></span>
+    <span id="semana-30"></span>
+    <span id="semana-31"></span>
+    <span id="total-julio"></span>
+
+    <span id="semana-32"></span>
+    <span id="semana-33"></span>
+    <span id="semana-34"></span>
+    <span id="semana-35"></span>
+    <span id="total-agosto"></span>
+  
+    <span id="semana-36"></span>
+    <span id="semana-37"></span>
+    <span id="semana-38"></span>
+    <span id="semana-39"></span>
+    <span id="semana-40"></span>
+   <span id="total-septiembre"></span>
+    
+    <span id="semana-41"></span>
+    <span id="semana-42"></span>
+    <span id="semana-43"></span>
+    <span id="semana-44"></span>
+    <span id="total-octubre"></span>
+    
+    
+    <span id="semana-45"></span>
+    <span id="semana-46"></span>
+    <span id="semana-47"></span>
+    <span id="semana-48"></span>
+    <span id="total-noviembre"></span>
+    
+  
+  </section>
+  
+  
+  <center>
+  <table border="1">
+  <th style="background-color: blue; color: white;">SUB-TOTAL</th>
+  <th style="background-color: blue; color: white;">INTERÉS</th>
+  <th style="background-color: blue; color: white;">TOTAL</th>
+      <tr>
+      <td style="color: blue;"><span id="emmanuel-subtotal"></span></td>
+      <td style="color: blue;"><span id="emmanuel-interes"></span></td>
+      <td style="color: blue;"><span id="emmanuel-total"></span></td>
+      </tr>
+      </table></center>
+    
+    <!-- Otros elementos de la página -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <h2>Nurbis Urbáez</h2>
+      
+      <section Style="display: none;">
+    <span id="semana-23"></span>
+    <span id="semana-24"></span>
+    <span id="semana-25"></span>
+    <span id="semana-26"></span>
+    <span id="semana-27"></span>
+    <span id="total-junio"></span>
+    
+    <span id="semana-28"></span>
+    <span id="semana-29"></span>
+    <span id="semana-30"></span>
+    <span id="semana-31"></span>
+    <span id="total-julio"></span>
+
+    <span id="semana-32"></span>
+    <span id="semana-33"></span>
+    <span id="semana-34"></span>
+    <span id="semana-35"></span>
+    <span id="total-agosto"></span>
+  
+    <span id="semana-36"></span>
+    <span id="semana-37"></span>
+    <span id="semana-38"></span>
+    <span id="semana-39"></span>
+    <span id="semana-40"></span>
+   <span id="total-septiembre"></span>
+    
+    <td><span id="semana-41"></span></td>
+    <td><span id="semana-42"></span></td>
+    <td><span id="semana-43"></span></td>
+    <td><span id="semana-44"></span></td>
+    <span id="total-octubre"></span>
+    
+    <span id="semana-45"></span>
+    <span id="semana-46"></span>
+    <span id="semana-47"></span>
+    <span id="semana-48"></span>
+    <span id="total-noviembre"></span>
+    </section>
+  
+  <center>
+  <table border="1">
+  <th style="background-color: blue; color: white;">SUB-TOTAL</th>
+  <th style="background-color: blue; color: white;">INTERÉS</th>
+  <th style="background-color: blue; color: white;">TOTAL</th>
+      <tr>
+      <td style="color: blue;"><span id="nurbis-subtotal"></span></td>
+      <td style="color: blue;"><span id="nurbis-interes"></span></td>
+      <td style="color: blue;"><span id="nurbis-total"></span></td>
+      </tr>
+      </table></center>
+    
+    <!-- Otros elementos de la página -->
+    
+    
+    
+    
+    
+    
+    <h2>Nobis Sol Amundarey</h2>
+      
+      <section Style="display: none;">
+    <span id="semana-23"></span>
+    <span id="semana-24"></span>
+    <span id="semana-25"></span>
+    <span id="semana-26"></span>
+    <span id="semana-27"></span>
+    <span id="total-junio"></span>
+    
+    <span id="semana-28"></span>
+    <span id="semana-29"></span>
+    <span id="semana-30"></span>
+    <span id="semana-31"></span>
+    <span id="total-julio"></span>
+
+    <span id="semana-32"></span>
+    <span id="semana-33"></span>
+    <span id="semana-34"></span>
+    <span id="semana-35"></span>
+    <span id="total-agosto"></span>
+  
+    <span id="semana-36"></span>
+    <span id="semana-37"></span>
+    <span id="semana-38"></span>
+    <span id="semana-39"></span>
+    <span id="semana-40"></span>
+   <span id="total-septiembre"></span>
+    
+    <td><span id="semana-41"></span></td>
+    <td><span id="semana-42"></span></td>
+    <td><span id="semana-43"></span></td>
+    <td><span id="semana-44"></span></td>
+    <span id="total-octubre"></span>
+    
+    <span id="semana-45"></span>
+    <span id="semana-46"></span>
+    <span id="semana-47"></span>
+    <span id="semana-48"></span>
+    <span id="total-noviembre"></span>
+    </section>
+  
+  <center>
+  <table border="1">
+  <th style="background-color: blue; color: white;">SUB-TOTAL</th>
+  <th style="background-color: blue; color: white;">INTERÉS</th>
+  <th style="background-color: blue; color: white;">TOTAL</th>
+      <tr>
+      <td style="color: blue;"><span id="nobis-subtotal"></span></td>
+      <td style="color: blue;"><span id="nobis-interes"></span></td>
+      <td style="color: blue;"><span id="nobis-total"></span></td>
+      </tr>
+      </table></center>
+    
+    <!-- Otros elementos de la página -->
+    
+    
+    
+    
+    
+    
+    
+    
+    <h2>Manuel Gordillo</h2>
+      
+      <section Style="display: none;">
+    <span id="semana-23"></span>
+    <span id="semana-24"></span>
+    <span id="semana-25"></span>
+    <span id="semana-26"></span>
+    <span id="semana-27"></span>
+    <span id="total-junio"></span>
+    
+    <span id="semana-28"></span>
+    <span id="semana-29"></span>
+    <span id="semana-30"></span>
+    <span id="semana-31"></span>
+    <span id="total-julio"></span>
+
+    <span id="semana-32"></span>
+    <span id="semana-33"></span>
+    <span id="semana-34"></span>
+    <span id="semana-35"></span>
+    <span id="total-agosto"></span>
+  
+    <span id="semana-36"></span>
+    <span id="semana-37"></span>
+    <span id="semana-38"></span>
+    <span id="semana-39"></span>
+    <span id="semana-40"></span>
+   <span id="total-septiembre"></span>
+    
+    <td><span id="semana-41"></span></td>
+    <td><span id="semana-42"></span></td>
+    <td><span id="semana-43"></span></td>
+    <td><span id="semana-44"></span></td>
+    <span id="total-octubre"></span>
+    
+    <span id="semana-45"></span>
+    <span id="semana-46"></span>
+    <span id="semana-47"></span>
+    <span id="semana-48"></span>
+    <span id="total-noviembre"></span>
+    </section>
+  
+  <center>
+  <table border="1">
+  <th style="background-color: blue; color: white;">SUB-TOTAL</th>
+  <th style="background-color: blue; color: white;">INTERÉS</th>
+  <th style="background-color: blue; color: white;">TOTAL</th>
+      <tr>
+      <td style="color: blue;"><span id="manuel-subtotal"></span></td>
+      <td style="color: blue;"><span id="manuel-interes"></span></td>
+      <td style="color: blue;"><span id="manuel-total"></span></td>
+      </tr>
+      </table></center>
+    
+    <!-- Otros elementos de la página -->
+    
+    
+    
+    
+    
+    
+    
+    <h2>Yulibí López</h2>
+      
+      <section Style="display: none;">
+    <span id="semana-23"></span>
+    <span id="semana-24"></span>
+    <span id="semana-25"></span>
+    <span id="semana-26"></span>
+    <span id="semana-27"></span>
+    <span id="total-junio"></span>
+    
+    <span id="semana-28"></span>
+    <span id="semana-29"></span>
+    <span id="semana-30"></span>
+    <span id="semana-31"></span>
+    <span id="total-julio"></span>
+
+    <span id="semana-32"></span>
+    <span id="semana-33"></span>
+    <span id="semana-34"></span>
+    <span id="semana-35"></span>
+    <span id="total-agosto"></span>
+  
+    <span id="semana-36"></span>
+    <span id="semana-37"></span>
+    <span id="semana-38"></span>
+    <span id="semana-39"></span>
+    <span id="semana-40"></span>
+   <span id="total-septiembre"></span>
+    
+    <td><span id="semana-41"></span></td>
+    <td><span id="semana-42"></span></td>
+    <td><span id="semana-43"></span></td>
+    <td><span id="semana-44"></span></td>
+    <span id="total-octubre"></span>
+    
+    <span id="semana-45"></span>
+    <span id="semana-46"></span>
+    <span id="semana-47"></span>
+    <span id="semana-48"></span>
+    <span id="total-noviembre"></span>
+    </section>
+  
+  <center>
+  <table border="1">
+  <th style="background-color: blue; color: white;">SUB-TOTAL</th>
+  <th style="background-color: blue; color: white;">INTERÉS</th>
+  <th style="background-color: blue; color: white;">TOTAL</th>
+      <tr>
+      <td style="color: blue;"><span id="yuli-subtotal"></span></td>
+      <td style="color: blue;"><span id="yuli-interes"></span></td>
+      <td style="color: blue;"><span id="yuli-total"></span></td>
+      </tr>
+      </table></center>
+    
+    <!-- Otros elementos de la página -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <h2>Yulmis Manosalva</h2>
+      
+      <section Style="display: none;">
+    <span id="semana-23"></span>
+    <span id="semana-24"></span>
+    <span id="semana-25"></span>
+    <span id="semana-26"></span>
+    <span id="semana-27"></span>
+    <span id="total-junio"></span>
+    
+    <span id="semana-28"></span>
+    <span id="semana-29"></span>
+    <span id="semana-30"></span>
+    <span id="semana-31"></span>
+    <span id="total-julio"></span>
+
+    <span id="semana-32"></span>
+    <span id="semana-33"></span>
+    <span id="semana-34"></span>
+    <span id="semana-35"></span>
+    <span id="total-agosto"></span>
+  
+    <span id="semana-36"></span>
+    <span id="semana-37"></span>
+    <span id="semana-38"></span>
+    <span id="semana-39"></span>
+    <span id="semana-40"></span>
+   <span id="total-septiembre"></span>
+    
+    <td><span id="semana-41"></span></td>
+    <td><span id="semana-42"></span></td>
+    <td><span id="semana-43"></span></td>
+    <td><span id="semana-44"></span></td>
+    <span id="total-octubre"></span>
+    
+    <span id="semana-45"></span>
+    <span id="semana-46"></span>
+    <span id="semana-47"></span>
+    <span id="semana-48"></span>
+    <span id="total-noviembre"></span>
+    </section>
+  
+  <center>
+  <table border="1">
+  <th style="background-color: blue; color: white;">SUB-TOTAL</th>
+  <th style="background-color: blue; color: white;">INTERÉS</th>
+  <th style="background-color: blue; color: white;">TOTAL</th>
+      <tr>
+      <td style="color: blue;"><span id="yulmis-subtotal"></span></td>
+      <td style="color: blue;"><span id="yulmis-interes"></span></td>
+      <td style="color: blue;"><span id="yulmis-total"></span></td>
+      </tr>
+      </table></center>
+    
+    <!-- Otros elementos de la página -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <h2>Isaías Manosalva</h2>
+      
+      <section Style="display: none;">
+    <span id="semana-23"></span>
+    <span id="semana-24"></span>
+    <span id="semana-25"></span>
+    <span id="semana-26"></span>
+    <span id="semana-27"></span>
+    <span id="total-junio"></span>
+    
+    <span id="semana-28"></span>
+    <span id="semana-29"></span>
+    <span id="semana-30"></span>
+    <span id="semana-31"></span>
+    <span id="total-julio"></span>
+
+    <span id="semana-32"></span>
+    <span id="semana-33"></span>
+    <span id="semana-34"></span>
+    <span id="semana-35"></span>
+    <span id="total-agosto"></span>
+  
+    <span id="semana-36"></span>
+    <span id="semana-37"></span>
+    <span id="semana-38"></span>
+    <span id="semana-39"></span>
+    <span id="semana-40"></span>
+   <span id="total-septiembre"></span>
+    
+    <td><span id="semana-41"></span></td>
+    <td><span id="semana-42"></span></td>
+    <td><span id="semana-43"></span></td>
+    <td><span id="semana-44"></span></td>
+    <span id="total-octubre"></span>
+    
+    <span id="semana-45"></span>
+    <span id="semana-46"></span>
+    <span id="semana-47"></span>
+    <span id="semana-48"></span>
+    <span id="total-noviembre"></span>
+    </section>
+  
+  <center>
+  <table border="1">
+  <th style="background-color: blue; color: white;">SUB-TOTAL</th>
+  <th style="background-color: blue; color: white;">INTERÉS</th>
+  <th style="background-color: blue; color: white;">TOTAL</th>
+      <tr>
+      <td style="color: blue;"><span id="isaias-subtotal"></span></td>
+      <td style="color: blue;"><span id="isaias-interes"></span></td>
+      <td style="color: blue;"><span id="isaias-total"></span></td>
+      </tr>
+      </table></center>
+    
+    <!-- Otros elementos de la página -->
+    
+    
+    
+    
+    <br>
+<footer>
+  Fondo de Inversión Vida © 2024 - <a href="https://wa.me/+584262840546">Contáctame por WhatsApp</a>
+</footer>
+
+    </div>
+    <script src="script.js"></script>
+    
+</div>
+</body>
+</html>

@@ -456,7 +456,7 @@ const inversionesYuli = {
     semana31: 185,
     semana32: 185,
     semana33: 185,
-    semana34: 0,
+    semana34: 200,
     semana35: 0,
     semana36: 0,
     semana37: 0,

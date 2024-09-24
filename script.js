@@ -752,7 +752,7 @@ const inversionesIsaias = {
     semana33: 190,
     semana34: 190,
     semana35: 190,
-    semana36: 0,
+    semana36: 185,
     semana37: 0,
     semana38: 0,
     semana39: 0,

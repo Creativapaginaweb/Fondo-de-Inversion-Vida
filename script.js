@@ -108,7 +108,7 @@ document.getElementById('total-noviembre').appendChild(crearNodoTexto(`$${totalN
 const subTotalEmmanuel = totalJunio + totalJulio + totalAgosto + totalSeptiembre + totalOctubre + totalNoviembre;
 
 // Interés (constante = 0)
-const interesEmmanuel = 173.28;
+const interesEmmanuel = 209.28;
 
 // Total final (sub-total + interés)
 const totalFinalEmmanuel = subTotalEmmanuel + interesEmmanuel;
@@ -256,7 +256,7 @@ document.getElementById('total-noviembre').appendChild(crearNodoTexto(`$${totalN
 const subTotalNurbis = totalJunio + totalJulio + totalAgosto + totalSeptiembre + totalOctubre + totalNoviembre;
 
 // Interés (constante = 0)
-const interesNurbis = 38.12;
+const interesNurbis = 47.12;
 
 // Total final (sub-total + interés)
 const totalFinalNurbis = subTotalNurbis + interesNurbis;
@@ -404,7 +404,7 @@ document.getElementById('total-noviembre').appendChild(crearNodoTexto(`$${totalN
 const subTotalNobis = totalJunio + totalJulio + totalAgosto + totalSeptiembre + totalOctubre + totalNoviembre;
 
 // Interés (constante = 0)
-const interesNobis = 38.12;
+const interesNobis = 47.12;
 
 // Total final (sub-total + interés)
 const totalFinalNobis = subTotalNobis + interesNobis;
@@ -551,7 +551,7 @@ document.getElementById('total-noviembre').appendChild(crearNodoTexto(`$${totalN
 const subTotalYuli = totalJunio + totalJulio + totalAgosto + totalSeptiembre + totalOctubre + totalNoviembre;
 
 // Interés (constante = 0)
-const interesYuli = 38.12;
+const interesYuli = 47.12;
 
 // Total final (sub-total + interés)
 const totalFinalYuli = subTotalYuli + interesYuli;
@@ -698,7 +698,7 @@ document.getElementById('total-noviembre').appendChild(crearNodoTexto(`$${totalN
 const subTotalYulmis = totalJunio + totalJulio + totalAgosto + totalSeptiembre + totalOctubre + totalNoviembre;
 
 // Interés (constante = 0)
-const interesYulmis = 38.12;
+const interesYulmis = 47.12;
 
 // Total final (sub-total + interés)
 const totalFinalYulmis = subTotalYulmis + interesYulmis;
@@ -845,7 +845,7 @@ document.getElementById('total-noviembre').appendChild(crearNodoTexto(`$${totalN
 const subTotalIsaias = totalJunio + totalJulio + totalAgosto + totalSeptiembre + totalOctubre + totalNoviembre;
 
 // Interés (constante = 0)
-const interesIsaias = 38.12;
+const interesIsaias = 47.12;
 
 // Total final (sub-total + interés)
 const totalFinalIsaias = subTotalIsaias + interesIsaias;
@@ -992,7 +992,7 @@ document.getElementById('total-noviembre').appendChild(crearNodoTexto(`$${totalN
 const subTotalManuel = totalJunio + totalJulio + totalAgosto + totalSeptiembre + totalOctubre + totalNoviembre;
 
 // Interés (constante = 0)
-const interesManuel = 38.12;
+const interesManuel = 47.12;
 
 // Total final (sub-total + interés)
 const totalFinalManuel = subTotalManuel + interesManuel;

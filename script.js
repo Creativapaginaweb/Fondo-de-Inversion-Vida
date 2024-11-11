@@ -404,7 +404,7 @@ document.getElementById('total-noviembre').appendChild(crearNodoTexto(`$${totalN
 const subTotalNobis = totalJunio + totalJulio + totalAgosto + totalSeptiembre + totalOctubre + totalNoviembre;
 
 // Interés (constante = 0)
-const interesNobis = 47.12;
+const interesNobis = 109.32;
 
 // Total final (sub-total + interés)
 const totalFinalNobis = subTotalNobis + interesNobis;
@@ -698,7 +698,7 @@ document.getElementById('total-noviembre').appendChild(crearNodoTexto(`$${totalN
 const subTotalYulmis = totalJunio + totalJulio + totalAgosto + totalSeptiembre + totalOctubre + totalNoviembre;
 
 // Interés (constante = 0)
-const interesYulmis = 47.12;
+const interesYulmis = 109.32;
 
 // Total final (sub-total + interés)
 const totalFinalYulmis = subTotalYulmis + interesYulmis;
@@ -909,7 +909,7 @@ const inversionesManuel = {
     semana43: 214,
     semana44: 220,
     semana45: 220,
-    semana46: 0,
+    semana46: 220,
     semana47: 0,
     semana48: 0,
     semana49: 0,
@@ -992,7 +992,7 @@ document.getElementById('total-noviembre').appendChild(crearNodoTexto(`$${totalN
 const subTotalManuel = totalJunio + totalJulio + totalAgosto + totalSeptiembre + totalOctubre + totalNoviembre;
 
 // Interés (constante = 0)
-const interesManuel = 47.12;
+const interesManuel = 109.32;
 
 // Total final (sub-total + interés)
 const totalFinalManuel = subTotalManuel + interesManuel;
